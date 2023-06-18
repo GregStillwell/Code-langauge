@@ -1,6 +1,6 @@
 function handleSelect(event) {
   event.preventDefault();
-  const selection = document.getElementById("questions").value;
+  const selection = document.getElementById("question").value;
 }
 
 window.addEventListener("load", function() {
