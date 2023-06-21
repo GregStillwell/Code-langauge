@@ -7,16 +7,23 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title> Code Langauge</title>
 </head>
-<H1>Which Langauge are You</H1>
 <body>
+  <h1>Which Langauge are You</h1>
   <div>
-    <form>
-      <form id="codeLangauge"></form>
-      <select name="question" id="codeLangauge">
-        <option value="">Select a Question</option>
+    <form id="myForm">
+      <label for="question1">What your favorite pet?</label>
+      <select name="question1" id="catLover">
+        <option value="">Select a Answer</option>
         <option value="javascript">Are you a Cat Lover?</option>
         <option value="C#">Dogs are Better than Cats?</option>
         <option value="Ruby">Other than Cats and Dog.</option>
+      </select>
+      <label for="question2">Whats your favorite color?</label>
+      <select name="question2" id="favoriteColor">
+        <option value="">Select a Answer</option>
+        <option value="Red">Is your favorite color red?</option>
+        <option value="Orange">Is your favorite color orange? </option>
+        <option value="yellow">Is your favorite color yellow?</option>
       </select>
       <button type="Submit">Submit</button> 
     </form>
@@ -24,7 +31,6 @@
     
     
   <div id="javascript" class="hidden">
-    <h1 id="catLover"></H1>
 
 
     <h2>Javascript</h2>

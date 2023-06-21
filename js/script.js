@@ -1,21 +1,19 @@
 window.onload = function() {
-  let form = document.querySelector("form");
+  const form = document.getElementById("myForm");
   form.onsubmit = function(event) {
     event.preventDefault();
-    let catLover = document.getElementById("Javascript")
-catLover.setAttribute("class", "hidden");
+//     const catLover = document.getElementById("Javascript")
+// catLover.setAttribute("class", "hidden");
 
-const question = (document.querySelector("input#codeLangauge").value);
-    
+    const question = (document.getElementById("catLover").value);
+    const question2 = (document.getElementById("favoriteColor").value);
+    console.log(question2)
+    if (question === "javascript") {
+       const javascriptDiv = document.getElementById("javascript")
+       javascriptDiv.removeAttribute("class")
+    }
 
-function handleSelect(event) {
-  event.preventDefault();
-  const selection = document.getElementById("question").value;
-}
-
-window.addEventListener("load", function() {
-  document.getElementById("codeLangauge").addEventListener("submit", handleSelect);
-});
   }
+
 }
 
