@@ -17,7 +17,6 @@ window.onload = function() {
     if (question === "C#") {
       const cDiv = document.getElementById("C#")
       cDiv.removeAttribute("class")
-      console.log(question)
     }
     }
 
