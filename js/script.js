@@ -7,10 +7,14 @@ window.onload = function() {
 
     const question = (document.getElementById("catLover").value);
     const question2 = (document.getElementById("favoriteColor").value);
-    console.log(question2)
     if (question === "javascript") {
        const javascriptDiv = document.getElementById("javascript")
        javascriptDiv.removeAttribute("class")
+    if (question ==="c#") {
+      const cDiv = document.getElementById("c#")
+      cDiv.removeAttribute("class")
+      console.log(question)
+    };
     }
 
   }
