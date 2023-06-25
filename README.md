@@ -1,5 +1,5 @@
 Greg Stillwell
-#### By _**{List of contributors}**_
+#### By _****_
 Greg Stillwell
 #### _{Brief description of application}_
 This is a survey questions about what code langauge are you 
