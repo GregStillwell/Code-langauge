@@ -2,6 +2,15 @@ window.onload = function() {
   const form = document.getElementById("myForm");
   form.onsubmit = function(event) {
     event.preventDefault();
+
+    document.getElementById("resetButton").addEventListener("click"), (event) {
+    form.reset();  
+
+    function hideResultsAndError() {
+      document.getElementById("C#").setAttribute("class", "hidden");
+      document.getElementById("javascript").setAttribute("class", "hidden");
+      document.getElementById("Ruby").setAttribute("class", "hidden");
+    
 //     const catLover = document.getElementById("Javascript")
 // catLover.setAttribute("class", "hidden");
 
@@ -10,7 +19,8 @@ window.onload = function() {
 
     if (question === "javascript") {
       const javascriptDiv = document.getElementById("javascript")
-      javascriptDiv.removeAttribute("class")
+       javascriptDiv.removeAttribute("class")
+    }
       
 
 
@@ -18,7 +28,9 @@ window.onload = function() {
       const cDiv = document.getElementById("C#")
       cDiv.removeAttribute("class")
     }
-    }
+
+    
+  }
 
   }
 
