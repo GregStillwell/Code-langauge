@@ -19,7 +19,9 @@ const result = question1 + question2 + question3 + question4 + question5;
 const javascript = document.getElementById("javascript");
 const cSharp = document.getElementById("cSharp");
 const ruby = document.getElementById("ruby");
-     
+const resetButton = document.getElementById("resetButton");
+
+
 
 if (result >= 18) {
       ruby.removeAttribute("class");
@@ -36,19 +38,17 @@ if (result >= 18) {
       cSharp.removeAttribute("class");
       form.setAttribute("class", "hidden");
       resetButton.removeAttribute("class");
-      console.log(resetBut)
 
-let resetButton = querySelector("resetButton");
-    resetButton.addEventListener("click", function() {
-        window.location.reload()
-        
+      let reset = document.querySelector("button#reset");
+      reset.addEventListener("click", function() {
+      window.location.reload()
+
 });
 
+        
+};
+
       
-};     
+};   
 
-
-
-    
-    }
 }
