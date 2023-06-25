@@ -3,36 +3,44 @@ window.onload = function() {
   form.onsubmit = function(event) {
     event.preventDefault();
 
-    document.getElementById("resetButton").addEventListener("click"), (event) {
-    form.reset();  
+    document.getElementById("resetButton").addEventListener("click", (event)=> {
+    form.reset();
+    hideResults();
+    });
 
-    function hideResultsAndError() {
-      document.getElementById("C#").setAttribute("class", "hidden");
-      document.getElementById("javascript").setAttribute("class", "hidden");
-      document.getElementById("Ruby").setAttribute("class", "hidden");
+  //  function hideResults() {
+  //    document.getElementById("javascript").setAttribute("class", "hidden");
+   //   document.getElementById("Ruby").setAttribute("class", "hidden");
+   //   document.getElementById("C#").setAttribute("class", "hidden");
+    };
+
+    const question1 = parseInt(document.querySelector("input[name='question1']:checked").value);
+    const question2 = parseInt(document.querySelector("input[name='question2']:checked").value);
+    const question3 = parseInt(document.querySelector("input[name='question3']:checked").value);
+    const question4 = parseInt(document.querySelector("input[name='question4']:checked").value);
+    const question5 = parseInt(document.querySelector("input[name='question5']:checked").value);
+    const result = question1 + question2 + question3 + question4 + question5;
+
+  
     
-//     const catLover = document.getElementById("Javascript")
-// catLover.setAttribute("class", "hidden");
 
-    const question = (document.getElementById("catLover").value);
-    const question2 = (document.getElementById("favoriteColor").value);
-
-    if (question === "javascript") {
-      const javascriptDiv = document.getElementById("javascript")
-       javascriptDiv.removeAttribute("class")
+    
+  //  if (question === "javascript") {
+  //    const javascriptDiv = document.getElementById("javascript")
+   //    javascriptDiv.removeAttribute("class")
+   //    console.log(question)
     }
       
 
 
-    if (question === "C#") {
-      const cDiv = document.getElementById("C#")
-      cDiv.removeAttribute("class")
+  
+    
+
+
     }
 
+
     
-  }
+  //}
 
-  }
-
-}
 
