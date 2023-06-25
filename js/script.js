@@ -1,21 +1,21 @@
 window.onload = function() {
   const form = document.getElementById("myForm");
   form.onsubmit = function(event) {
-    event.preventDefault();
+    event.preventDefault(); 
 
-    const question1 = parseInt(document.querySelector("input[name='question1]:checked").value);
-    const question2 = parseInt(document.querySelector("input[name='question2']:checked").value);
-    const question3 = parseInt(document.querySelector("input[name='question3']:checked").value);
-    const question4 = parseInt(document.querySelector("input[name='question4']:checked").value);
-    const question5 = parseInt(document.querySelector("input[name='question5']:checked").value);
-    const result = question1 + question2 + question3 + question4 + question5;
-    
+const question1 = parseInt(document.querySelector("input[name='question1']:checked").value);
+const question2 = parseInt(document.querySelector("input[name='question2']:checked").value);
+const question3 = parseInt(document.querySelector("input[name='question3']:checked").value);
+const question4 = parseInt(document.querySelector("input[name='question4']:checked").value);
+const question5 = parseInt(document.querySelector("input[name='question5']:checked").value);
+const result = question1 + question2 + question3 + question4 + question5;
+console.log(result)    
 
-    if (result >= 15) {
-      Ruby.removeAttribute("class");
+    if (result >= 13) {
+      ruby.removeAttribute("class");
       form.setAttribute("class", "hidden");
       reset.removeAttribute("class");
-      console.log(result)
+     
 } else if (result >= 20) {
       javascript.removeAttribute("class");
       form.setAttribute("class", "hidden");
@@ -25,13 +25,13 @@ window.onload = function() {
       cSharp.removeAttribute("class");
       form.setAttribute("class", "hidden");
       reset.removeAttribute("class");
+
+      const javascript = document.getElementById("javascript");
+      const cSharp = document.getElementById("c#");
+      const ruby = document.getElementById("ruby");
+     
 };     
-
-
-
-    const javascript = document.getElementById("javascript");
-    const cSharp = document.getElementById("c#");
-    const Ruby = document.getElementById("Ruby");
+   
 
 
     
