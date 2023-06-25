@@ -21,6 +21,11 @@ window.onload = function() {
     const question5 = parseInt(document.querySelector("input[name='question5']:checked").value);
     const result = question1 + question2 + question3 + question4 + question5;
 
+    
+
+    
+
+
   
     
 
